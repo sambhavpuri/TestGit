@@ -1,6 +1,8 @@
 stages:
-- stage: cloning
-  jobs:
+- stage: gitHub Clone repo
+  jobs:  
   - job: clonerepo
+  pool: 
+    name: Testing
     steps:
     - script: git clone https://github.deutsche-boerse.de/dev/rdh_test
