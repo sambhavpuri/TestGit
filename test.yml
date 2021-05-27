@@ -1,0 +1,17 @@
+trigger:
+batch: false
+ 
+stages:
+- stage: gitHub Clone repo
+displayName: Clone repo
+
+jobs:
+  - job: clonerepo
+displayName: Clone
+pool: 
+name: Testing
+ 
+steps: 
+  - script: git clone https://github.deutsche-boerse.de/dev/rdh_test
+displayName: Cloning .de repo
+
