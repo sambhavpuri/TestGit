@@ -1,5 +1,5 @@
 stages:
-- stage: gitHub Clone repo
+- stage: cloning
   jobs:  
   - job: clonerepo
   pool: 
